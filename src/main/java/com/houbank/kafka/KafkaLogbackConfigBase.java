@@ -134,7 +134,10 @@ public abstract class KafkaLogbackConfigBase<I extends DeferredProcessingAware> 
     public void setRetries(int retries) {
         this.retries = retries;
     }
-
+    
+    public void setMaxBlockMs(int maxBlockMs) {
+        this.maxBlockMs = maxBlockMs;
+    }
 
     public void setCompressionType(String compressionType) {
         this.compressionType = compressionType;
