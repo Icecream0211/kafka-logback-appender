@@ -118,3 +118,6 @@ The appender takes the available Kafka Producer parameters (see [ProductConfig] 
     <root level="DEBUG">
         <appender-ref ref="kafka-appender" />
     </root>
+    
+    
+    增加配置<MaxBlockMs>1000</MaxBlockMs>，默认为0，这是指连接kafka的时候，获取metadata的最长等待时间
